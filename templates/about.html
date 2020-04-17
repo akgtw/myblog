@@ -1,14 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-{% load static %}
-<head>
-    <meta charset="UTF-8">
-<link rel="stylesheet" href="{% static '/main/css/main.css' %}">
-    <title>部落格</title>
-</head>
-<body>
-{% include 'menu.html' %}
-<h2>關於部落格</h2>
-<p>歡迎來到我的部落格</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block heading %}關於{% endblock %}
+{% block content %}
+<p>關於部落格</p>
+{% endblock %}
