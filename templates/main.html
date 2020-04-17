@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static '/main/css/main.css' %}">
     <title>Title</title>
 </head>
 <body>
-<ul id="menu">
-    <li><a href="{% url 'main' %}">首頁</a> </li>
-    <li><a href="{% url 'about' %}">關於</a> </li>
-</ul>
+{% include 'menu.html' %}
+
 </body>
 </html>
